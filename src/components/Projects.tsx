@@ -22,7 +22,7 @@ const ProjectCarousel = Styled.div`
 const Projects: FC = () => {
     return (
         <>
-            <Carousel autoplay arrows>
+            <Carousel autoplay>
                 <div>
                   <h3 style={{height:'100vh', color: '#fff', lineHeight: '160px', textAlign: 'center', background: '#364d79'}}>1</h3>
                 </div>
