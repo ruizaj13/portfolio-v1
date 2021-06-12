@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scroller } from 'react-scroll';
 import Intro from './components/Intro';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 import './App.css';
 
 const App: FC = () => {
@@ -18,6 +19,9 @@ const App: FC = () => {
       </Element>
       <Element name='carousel'>
         <Projects/>
+      </Element>
+      <Element name='contact'>
+        <Contact/>
       </Element>
     </div>
   );
