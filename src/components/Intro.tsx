@@ -1,24 +1,26 @@
 import React, { FC } from "react";
+import ObjModel from "./SkillsObject";
 import Fade from 'react-reveal/Fade';
 import Typewriter from 'typewriter-effect';
-import { Avatar, Image } from 'antd';
-import { GithubOutlined, LinkedinFilled, UserOutlined } from '@ant-design/icons';
+import { GithubOutlined, LinkedinFilled} from '@ant-design/icons';
 import Styled from 'styled-components';
 
+
 const IntroBlock = Styled.div`
-    background-color: red;
+    background-color: black;
     display: flex;
     width: 100%;
     height: 100vh;
+    font-family:'Share Tech';
 `
 
 const TypeWriter = Styled.div`
-    background-color: yellow;
     width: 40%;
     height: 50%;
     font-size: 250%;
     margin-left: 5%;
     margin-top: 10%;
+    color: #3098ff;
     p {
         font-size: 50%;
         margin-top: 2%;
@@ -30,11 +32,6 @@ const Icons = Styled.div`
     justify-content: space-evenly; 
     width: 30%;
     margin-left: 35%;
-`
-
-const Photo = Styled(Avatar)`
-    margin-left: 20%;
-    margin-top: 15%;
 `
 
 const Intro: FC = () => {
@@ -67,7 +64,7 @@ const Intro: FC = () => {
                 </Icons>
             </Fade>
             </TypeWriter>
-            <Photo size={264}  src='../assets/face.jpg'/>
+            <ObjModel/> 
         </IntroBlock>
     );
 }
