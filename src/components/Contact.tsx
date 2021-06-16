@@ -13,6 +13,10 @@ const ContactBlock = Styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-family:'Share Tech';
+    color: #3098ff;
+    background: black; 
+
 `
 
 const ContactForm = Styled.form`
