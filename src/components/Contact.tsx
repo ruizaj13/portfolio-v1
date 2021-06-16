@@ -13,7 +13,6 @@ const ContactBlock = Styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: yellow;
 `
 
 const ContactForm = Styled.form`
@@ -67,7 +66,7 @@ const Contact: FC = () => {
         <ContactBlock>
             {succ ? <Alert message="Email Sent!" description="I will get back to you as soon as possible, thank you for your time!" type="success" showIcon closable style={{position: 'absolute', zIndex: 3, width: '30%', marginLeft: '35%', marginTop: '-15%'}}/> : <></>}
             {err ? <Alert message="Error" description="Seems emailjs is down, feel free to contact me directly at ruizajdev@gmail.com" type="error" showIcon closable style={{position: 'absolute', zIndex: 3, width: '30%', marginLeft: '35%', marginTop: '-15%'}}/> : <></>}
-            <Title style={{marginTop: '2%'}}>Contact Me!</Title>
+            <Title style={{marginTop: '2%', marginLeft:'42.5%'}}>Contact Me!</Title>
             <ContactForm className='contact-form' onSubmit={sendEmail}>
                 <input type='hidden' name='contact_number'/>
                 <label>Name</label>
