@@ -17,7 +17,6 @@ const ContactBlock = Styled.div`
     font-family:'Share Tech';
     color: #3098ff;
     background: black; 
-
 `
 
 const ContactForm = Styled.form`
