@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { Button } from 'antd';
 import { Link, Element} from 'react-scroll';
 import Intro from './components/Intro';
 import Projects from './components/Projects';

@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import ObjModel from "./SkillsObject";
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 import Typewriter from 'typewriter-effect';
 import { GithubOutlined, LinkedinFilled} from '@ant-design/icons';
 import Styled from 'styled-components';
