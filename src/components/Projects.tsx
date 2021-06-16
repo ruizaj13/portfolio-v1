@@ -1,42 +1,54 @@
 import React, { FC } from 'react';
-import { Carousel } from 'antd';
+import {Carousel} from '3d-react-carousal';
 import Styled from 'styled-components';
+import hrfGif from '../assets/hrf-gif.gif';
+import gitGif from '../assets/git-stats-gif.gif';
+import nasaGif from '../assets/nasa-gif.gif';
 
-const ProjectCarousel = Styled.div`
-    background-color: yellow;
-    height: 100vh;
+// const Pic = Styled.img`
+//   margin-top: 4%;
+
+// `
+
+const Wrapper = Styled.div`
+  .text {
+    position: absolute;
+    color: white;
+    background-color: red;
+    bottom: 16%;
+    left: 30%;
+    width: 40%;
+    height: 60%;
+    visibility:hidden;
+  }
+
+  &:hover .text {
+    visibility:visible;
+  }
 `
 
-// const Arrow = ({ type, style, className, onClick }) => (
-//     <Icon type={type} style={style} className{className} onClick={onClick}/>
-// )
+const slides = [
+  <Wrapper>
+    <img  src={gitGif} alt="1" />
+    <p style={{textAlign:'center'}} className='text'>Testing this shit</p>
+  </Wrapper>,
+  <Wrapper>
+    <img src={hrfGif} alt="2"/>
+    <p style={{textAlign:'center'}} className='text'>Testing this shit</p>
+  </Wrapper>,
+  <Wrapper>
+    <img src={nasaGif} alt="3"/>
+    <p style={{textAlign:'center'}} className='text'>Testing this shit</p>
+  </Wrapper>,
 
-// const contentStyle = {
-//     height: '160px',
-//     color: '#fff',
-//     lineHeight: '160px',
-//     textAlign: 'center',
-//     background: '#364d79',
-//   };
+];
+
 
 const Projects: FC = () => {
     return (
-        <>
-            <Carousel autoplay>
-                <div>
-                  <h3 style={{height:'100vh', color: '#fff', lineHeight: '160px', textAlign: 'center', background: '#364d79'}}>1</h3>
-                </div>
-                <div>
-                  <h3 style={{height:'100vh', color: '#fff', lineHeight: '160px', textAlign: 'center', background: '#364d79'}}>2</h3>
-                </div>
-                <div>
-                  <h3 style={{height:'100vh', color: '#fff', lineHeight: '160px', textAlign: 'center', background: '#364d79'}}>3</h3>
-                </div>
-                <div>
-                  <h3 style={{height:'100vh', color: '#fff', lineHeight: '160px', textAlign: 'center', background: '#364d79'}}>4</h3>
-                </div>
-            </Carousel>
-        </>
+      <div style={{ paddingTop:'10%', height: '100vh'}}>
+        <Carousel slides={slides}/>  
+      </div>
     )
 }
 

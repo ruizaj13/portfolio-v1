@@ -25,7 +25,7 @@ const Nav = Styled.div`
 
 const App: FC = () => {
   return (
-    <div className="App">
+    <>
         <Nav>
           <li><Link to='intro' spy={true} smooth={true} duration={500}>Intro</Link></li>
           <li><Link to='carousel' spy={true} smooth={true} duration={500}>Projects</Link></li>
@@ -40,7 +40,7 @@ const App: FC = () => {
       <Element name='contact'>
         <Contact/>
       </Element>
-    </div>
+    </>
   );
 }
 

@@ -18,3 +18,7 @@ code {
     url(./fonts/ShareTech-Regular.ttf) format('truetype');
   font-weight: normal;
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}

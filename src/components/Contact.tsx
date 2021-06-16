@@ -13,6 +13,7 @@ const ContactBlock = Styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background: yellow;
 `
 
 const ContactForm = Styled.form`

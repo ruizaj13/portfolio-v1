@@ -35,7 +35,7 @@ export default function ObjModel() {
           <EffectComposer>
             <Glitch
               //@ts-ignore
-              delay={[1,2]} // min and max glitch delay
+              delay={[1,10]} // min and max glitch delay
               //@ts-ignore
               duration={[0.6, 1.0]} // min and max glitch duration
               //@ts-ignore

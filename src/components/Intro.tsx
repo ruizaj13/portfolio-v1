@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import ObjModel from "./SkillsObject";
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import Typewriter from 'typewriter-effect';
 import { GithubOutlined, LinkedinFilled} from '@ant-design/icons';
 import Styled from 'styled-components';
@@ -42,7 +43,7 @@ const Intro: FC = () => {
             <TypeWriter>
                 <Typewriter
                     onInit={(typewriter) => {
-                      typewriter.typeString('Hello World!;')
+                      typewriter.typeString('Hey you!;')
                         .pauseFor(800)
                         .deleteAll()
                         .typeString('Welcome to my Portfolio!;')
@@ -55,12 +56,16 @@ const Intro: FC = () => {
                 />
             <Fade top delay={3000}>
                 <p> 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam odio alias in ipsam iusto aut suscipit, 
-                    totam voluptatem, rem quibusdam corporis error magnam, fugit eaque nemo. Architecto, esse error. Atque!
+                        Hi! My name's Juan and I'm a full-stack developer with a special love for front-end work. I've had a life-long 
+                    passion for tech and always dreamt of learning to code. So after getting my Bachelor's from San Francisco State, 
+                    I attended Lambda School to make that dream a reality and here I am! Best part is the learning never ends, I 
+                    love nothing more than to adapt to new and exciting challenges, so I'm ready for anything!<br/> 
+                    <br/>
+                    Checkout the interactive 3D model I created which lists my growing skill set! 
                 </p>
                 <Icons>
-                    <GithubOutlined />
-                    <LinkedinFilled />
+                    <a href='https://www.github.com/ruizaj13' target='_blank' rel='noreferrer'><GithubOutlined /></a>
+                    <a href='https://www.linkedin.com/in/ruizajdev/' target='_blank' rel='noreferrer'><LinkedinFilled/></a>
                 </Icons>
             </Fade>
             </TypeWriter>
