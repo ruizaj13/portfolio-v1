@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
 import { Typography, Input, Alert } from 'antd';
 import { UserOutlined, MailOutlined } from '@ant-design/icons';
+import Fade from 'react-reveal/Fade';
 import emailjs from 'emailjs-com';
 import Styled from 'styled-components';
 import { FormInterface } from '../interfaces/interfaces';
@@ -70,7 +71,8 @@ const Contact: FC = () => {
         <ContactBlock>
             {succ ? <Alert message="Email Sent!" description="I will get back to you as soon as possible, thank you for your time!" type="success" showIcon closable style={{position: 'absolute', zIndex: 3, width: '30%', marginLeft: '35%', marginTop: '-15%'}}/> : <></>}
             {err ? <Alert message="Error" description="Seems emailjs is down, feel free to contact me directly at ruizajdev@gmail.com" type="error" showIcon closable style={{position: 'absolute', zIndex: 3, width: '30%', marginLeft: '35%', marginTop: '-15%'}}/> : <></>}
-            <Title style={{marginTop: '2%', marginLeft:'42.5%'}}>Contact Me!</Title>
+            <Fade top>
+            <Title style={{marginTop: '2%', marginLeft:'42.5%', fontFamily:'Share Tech', color:'yellow'}}>Contact Me!</Title>
             <ContactForm className='contact-form' onSubmit={sendEmail}>
                 <input type='hidden' name='contact_number'/>
                 <label>Name</label>
@@ -81,6 +83,7 @@ const Contact: FC = () => {
                 <Text autoSize={{minRows: 15}} onChange={handleChange} value={formData.message} name='message'/>
                 <input type='submit' value='Send'/>
             </ContactForm>
+            </Fade>
         </ContactBlock>
     )
 }

@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import {Carousel} from '3d-react-carousal';
 import { GithubOutlined, GlobalOutlined } from '@ant-design/icons';
+import Fade from 'react-reveal/Fade';
 import Styled from 'styled-components';
 import hrfGif from '../assets/hrf-gif.gif';
 import gitGif from '../assets/git-stats-gif.gif';
@@ -95,8 +96,10 @@ const slides = [
 
 const Projects: FC = () => {
     return (
-      <div style={{ paddingTop:'15%', height: '100vh'}}>
+      <div style={{ paddingTop:'12%', height: '100vh'}}>
+        <Fade top>
         <Carousel slides={slides}/>  
+        </Fade>
       </div>
     )
 }
