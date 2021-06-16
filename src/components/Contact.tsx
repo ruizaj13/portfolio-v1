@@ -23,7 +23,7 @@ const ContactForm = Styled.form`
     display: flex;  
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-left: 29%;
     width: 40%;
     label {
