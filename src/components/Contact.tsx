@@ -43,8 +43,8 @@ const initialState: FormInterface = {
 
 const Contact: FC = () => {
     const [formData, setFormData] = useState(initialState)
-    const [succ, setSucc] = useState(false)
-    const [err, setErr] = useState(false)
+    const [succ, setSucc] = useState<boolean>(false)
+    const [err, setErr] = useState<boolean>(false)
     const { Title } = Typography;
     
 
