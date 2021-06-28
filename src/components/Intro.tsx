@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import ObjModel from "./SkillsObject";
 import Fade from 'react-reveal/Fade';
 import Typewriter from 'typewriter-effect';
-import { GithubOutlined, LinkedinFilled} from '@ant-design/icons';
+import { GithubOutlined, LinkedinFilled, MediumOutlined} from '@ant-design/icons';
 import Styled from 'styled-components';
 
 
@@ -31,7 +31,7 @@ const Icons = Styled.div`
     display: flex; 
     justify-content: space-evenly; 
     width: 30%;
-    margin-left: 35%;
+    margin-left: 27%;
 `
 
 const Intro: FC = () => {
@@ -65,6 +65,7 @@ const Intro: FC = () => {
                 <Icons>
                     <a href='https://www.github.com/ruizaj13' target='_blank' rel='noreferrer'><GithubOutlined /></a>
                     <a href='https://www.linkedin.com/in/ruizajdev/' target='_blank' rel='noreferrer'><LinkedinFilled/></a>
+                    <a href='https://ruizaj13.medium.com/' target='_blank' rel='noreferrer'><MediumOutlined /></a>
                 </Icons>
             </Fade>
             </TypeWriter>
