@@ -31,6 +31,25 @@ const Wrapper = Styled.div`
   }
 `
 
+const Deployment = Styled.a`
+  text-align: center; 
+  color: white; 
+  margin-left: 2%;
+
+  &:hover {
+    color: #3098ff;
+  }
+`
+
+const Repo = Styled.a`
+  text-align: center; 
+  color: white;
+
+  &:hover {
+    color: #3098ff;
+  }
+`
+
 const slides = [
   <Wrapper>
     <img  src={gitGif} alt="git-stats" />
@@ -42,8 +61,8 @@ const slides = [
       such as Ant Design and React.JS Particles to achieve a polished look. Used Chart.JS
       which is a React wrapper of React Chart.JS 2 to visualize JSON data from Github Polyglot.
       <br/>
-      <a href='https://github.com/ruizaj13/gitStats' target='_blank' rel='noreferrer' style={{textAlign:'center', color:'white'}}><GithubOutlined /></a>
-      <a href='https://git-stats-xi.vercel.app/' target='_blank' rel='noreferrer' style={{textAlign:'center', color:'white', marginLeft:'2%'}}><GlobalOutlined/></a>
+      <Repo href='https://github.com/ruizaj13/gitStats' target='_blank' rel='noreferrer'><GithubOutlined /></Repo>
+      <Deployment href='https://git-stats-xi.vercel.app/' target='_blank' rel='noreferrer' ><GlobalOutlined/></Deployment>
     </p>
   </Wrapper>,
   <Wrapper>
@@ -58,8 +77,8 @@ const slides = [
       the React-PDF library to dynamically render custom pdf files. I also worked collaboratively with 
       stakeholders to establish a proper FAQ for user's reference.
       <br/>
-      <a href='http://bit.ly/HRF-Asylum' target='_blank' rel='noreferrer' style={{textAlign:'center', color:'white'}}><GithubOutlined /></a>
-      <a href='https://a.humanrightsfirstasylum.dev/login' target='_blank' rel='noreferrer' style={{textAlign:'center', color:'white', marginLeft:'2%'}}><GlobalOutlined/></a>
+      <Repo href='http://bit.ly/HRF-Asylum' target='_blank' rel='noreferrer'><GithubOutlined /></Repo>
+      <Deployment href='https://a.humanrightsfirstasylum.dev/login' target='_blank' rel='noreferrer'><GlobalOutlined/></Deployment>
     </p>
   </Wrapper>,
   <Wrapper>
@@ -72,8 +91,8 @@ const slides = [
       requests to Nasa's APOD API and then dynamically displaying both image and video
       API responses.
       <br/>
-      <a href='https://github.com/ruizaj13/NASA-APP' target='_blank' rel='noreferrer' style={{textAlign:'center', color:'white'}}><GithubOutlined /></a>
-      <a href='https://nasa-app-portfolio.vercel.app/' target='_blank' rel='noreferrer' style={{textAlign:'center', color:'white', marginLeft:'2%'}}><GlobalOutlined/></a>
+      <Repo href='https://github.com/ruizaj13/NASA-APP' target='_blank' rel='noreferrer'><GithubOutlined /></Repo>
+      <Deployment href='https://nasa-app-portfolio.vercel.app/' target='_blank' rel='noreferrer'><GlobalOutlined/></Deployment>
     </p>
   </Wrapper>,
   <Wrapper>
@@ -87,8 +106,8 @@ const slides = [
       tables and persist data. Password hashing, verification, and storing was handled with 
       Bcrypt. Tested with Jest.
       <br/>
-      <a href='https://github.com/ruizaj13/Anywhere-Fitness-Back-end' target='_blank' rel='noreferrer' style={{textAlign:'center', color:'white'}}><GithubOutlined /></a>
-      <a href='https://anywhere-fitness-tt2.vercel.app/' target='_blank' rel='noreferrer' style={{textAlign:'center', color:'white', marginLeft:'2%'}}><GlobalOutlined/></a> 
+      <Repo href='https://github.com/ruizaj13/Anywhere-Fitness-Back-end' target='_blank' rel='noreferrer'><GithubOutlined /></Repo>
+      <Deployment href='https://anywhere-fitness-tt2.vercel.app/' target='_blank' rel='noreferrer'><GlobalOutlined/></Deployment> 
     </p>
   </Wrapper>,
 ];
